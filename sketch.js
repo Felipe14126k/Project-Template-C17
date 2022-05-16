@@ -52,7 +52,7 @@ mainCyclist.scale=0.07;
 //mainCyclist.setCollission("rectangle",0,0,40,40);
 //mainCyclist.setCollider("rectangle",0,0,40,40);
 //mainCyclist.setCollission("rectangle",0,0,40,40,50);
-//mainCyclist.setCollider("rectangle",0,0,40,40,50);
+mainCyclist.setCollider("rectangle",0,0,40,40,50);
 
   
 gameOver = createSprite(650,150);
@@ -145,22 +145,23 @@ function draw() {
     redCG.setVelocityXEach(0);
     redCG.setLifetimeEach(-1);
     
-    // if(keyDown("UP_ARROW")) {
-    //   reset;
-    // }
+     //if(keyDown("UP_ARROW")) {
+       //reset;
+      //}
+     
 
-    // if(key("UP_ARROW")) {
-    //   reset();
-    // }
+    //if(key("UP_ARROW")) {
+      // reset();
+     //}
 
-    // if(keyDown()) {
-    //   reset();
-    // }
+     //if(keyDown()) {
+       //reset();
+     //}
 
-    // if(keyDown("UP_ARROW")) {
-    //   reset();
-    // }
-}
+     if(keyDown("UP_ARROW")) {
+       reset();}
+     
+    }
 }
 
 function pinkCyclists(){
@@ -190,17 +191,17 @@ function redCyclists(){
         redCG.add(player3);
 }
 
-//function reset{
-//  gameState = END;
-//  gameOver.visible = false;
-//  mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+ // function reset{
+  //gameState = END;
+ // gameOver.visible = false;
+  //mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
   
-//  pinkCG.destroyEach();
-//  yellowCG.destroyEach();
-//  redCG.destroyEach();
+ // pinkCG.destroyEach();
+  //yellowCG.destroyEach();
+ // redCG.destroyEach();
   
-//  distance = 0;
-// }
+ // distance = 0;
+ //}
 
 //function reset{
 //  gameState = PLAY;
@@ -214,28 +215,28 @@ function redCyclists(){
 //  distance = 0;
 // }
 
-//function reset(){
-//  gameState = PLAY;
-//  gameOver.visible = false;
-//  mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+function reset(){
+ gameState = PLAY;
+ gameOver.visible = false;
+ mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
   
-//  pinkCG.destroyEach();
-//  yellowCG.destroyEach();
-//  redCG.destroyEach();
+ pinkCG.destroyEach();
+ yellowCG.destroyEach();
+ redCG.destroyEach();
   
-//  distance = 0;
-// }
+ distance = 0;
+}
 
-//function reset(){
-//  gameState = END;
-//  gameOver.visible = true;
-//  mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+// function reset(){
+//   gameState = END;
+//   gameOver.visible = true;
+//   mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
   
-//  pinkCG.destroyEach();
-//  yellowCG.destroyEach();
-//  redCG.destroyEach();
+//   pinkCG.destroyEach();
+//   yellowCG.destroyEach();
+//   redCG.destroyEach();
   
-//  distance = 50;
-// }
+//   distance = 50;
+//  }
 
 
